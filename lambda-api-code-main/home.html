@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        header {
+            background-color: #46a78c;
+            color: #fff;
+            padding: 20px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align items horizontally */
+        }
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+            gap: 20px;
+            justify-items: center; /* Center align items within grid cells */
+            width: 100%; /* Full width for grid */
+        }
+        .service {
+            width: 85%; /* Full width for each service card */
+            border: 1px solid #ddd;
+            border-radius: 20px; /* Rounded corners */
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: left; /* Left align text content */
+            display: flex;
+            flex-direction: column;
+        }
+        .service img {
+            max-width: 100%; /* Make the image responsive within its container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .service-content {
+            flex: 1; /* Grow to fill remaining space */
+        }
+        .service button {
+            background-color: #46a78c;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: auto; /* Push the button to the bottom */
+        }
+        .service button:hover {
+            background-color: #2b6756;
+        }
+        footer {
+            background-color: #46a78c;
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+            position: auto;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Appointment Booking Application</h1>
+        <p>Book your Appointment Online easily.</p>
+        <p>For inquiries, contact us at: <a href="mailto:info@example.com">info@example.com</a></p>
+    </header>
+
+    <section id="services">
+        <h2 style="margin-top: 0;">Our Services</h2> <!-- Centered heading at the top -->
+
+        <div class="services-container">
+            <div class="service">
+                <img src="https://i.pinimg.com/1200x/08/2d/ba/082dbacc059f55ab1eb2be2a70d63a9a.jpg" alt="Service 1">
+                <div class="service-content">
+                    <h3>Cardiologists</h3>
+                    <p>Cardiologists specialize in heart health, offering services like diagnostic tests, treatment plans, and preventive care.</p>
+                    <p>Charge: $150 - $500</p>
+                </div>
+                <button onclick="window.location.href = 'index.html';">Book Now</button>
+            </div>
+
+            <div class="service">
+                <img src="https://img.freepik.com/free-vector/pediatrician-doctor-woman-examining-baby-boy_3446-535.jpg" alt="Service 2">
+                <div class="service-content">
+                    <h3>Pediatrician</h3>
+                    <p>A pediatrician specializes in medical care for infants, children, and adolescents, providing preventive care, treatment for illnesses, and developmental assessments.</p>
+                    <p>Charge: $80 - $200</p>
+                </div>
+                <button onclick="window.location.href = 'index.html';">Book Now</button>
+            </div>
+
+            <div class="service">
+                <img src="https://img.freepik.com/free-vector/hand-drawn-dermatologist-cartoon-illustration_23-2151016711.jpg" alt="Service 3">
+                <div class="service-content">
+                    <h3>Dermatologist</h3>
+                    <p>Dermatologists diagnose and treat skin conditions, including acne, eczema, and skin cancer. They also offer cosmetic procedures like Botox and fillers.</p>
+                    <p>Charge: $100</p>
+                </div>
+                <button onclick="window.location.href = 'index.html';">Book Now</button>
+            </div>
+
+            <div class="service">
+                <img src="https://us.123rf.com/450wm/marinanaumova/marinanaumova2305/marinanaumova230500042/205419095-girl-neurologist-in-white-coat-with-stethoscope-doctor-conducts-research-on-the-brain-nervous-system.jpg?ver=6" alt="Service 4">
+                <div class="service-content">
+                    <h3>Neurologist</h3>
+                    <p>Neurologists diagnose and treat disorders related to the nervous system, including brain, spine, and nerves.</p>
+                    <p>Charge: $200 - $500</p>
+                </div>
+                <button onclick="window.location.href = 'index.html';">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Appointment Booking Application</p>
+    </footer>
+</body>
+</html>
